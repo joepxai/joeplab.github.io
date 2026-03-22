@@ -1,5 +1,6 @@
 {
   "name": "joeplab-site",
+  "description": "JOEPLAB Portfolio - Creative Design Studio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
