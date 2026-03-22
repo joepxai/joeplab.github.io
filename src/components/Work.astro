@@ -1,0 +1,60 @@
+---
+const projects = [
+  {
+    name: 'Nexus Platform',
+    tags: 'web • design • development',
+    bg: '#141820',
+    accent: '#3d5a80',
+  },
+  {
+    name: 'Lumina Brand Identity',
+    tags: 'brand • visual identity • motion',
+    bg: '#1a1410',
+    accent: '#c9a84c',
+  },
+  {
+    name: 'Sphere Interactive',
+    tags: 'web • 3d • interactive',
+    bg: '#0f1a18',
+    accent: '#2d6a4f',
+  },
+  {
+    name: 'Void Experience',
+    tags: 'concept • art direction • 3d',
+    bg: '#160d1f',
+    accent: '#7b2d8b',
+  },
+  {
+    name: 'Kinetic Dashboard',
+    tags: 'ui • ux • product design',
+    bg: '#0d1520',
+    accent: '#1a73e8',
+  },
+  {
+    name: 'Echo Campaign',
+    tags: 'campaign • motion • video',
+    bg: '#1a100d',
+    accent: '#c0392b',
+  },
+];
+---
+
+<section id="work" class="section">
+  <div id="work-header">
+    <span id="work-title">Selected Work</span>
+    <span id="work-count">06 Projects</span>
+  </div>
+  <div class="project-grid">
+    {projects.map((p, i) => (
+      <div class="project-card card-reveal" style={`transition-delay: ${(i % 2) * 0.1}s`}>
+        <div class="project-card-inner">
+          <div class="project-card-bg" style={`background: linear-gradient(135deg, ${p.bg} 0%, ${p.accent}33 100%)`}></div>
+          <div class="project-card-footer">
+            <div class="project-card-tags">{p.tags}</div>
+            <div class="project-card-name">{p.name}</div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

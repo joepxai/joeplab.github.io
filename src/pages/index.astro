@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Work from '../components/Work.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import Cursor from '../components/Cursor.astro';
+import Preloader from '../components/Preloader.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="JOEPLAB — Design studio crafting digital experiences that speak." />
+    <title>JOEPLAB — Design Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Preloader />
+    <Cursor />
+    <canvas id="canvas"></canvas>
+    <div id="ui">
+      <Header />
+      <main id="page-container">
+        <Hero />
+        <Work />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+    <script src="../scripts/main.ts"></script>
+  </body>
+</html>
